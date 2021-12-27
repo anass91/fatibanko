@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+:root{
+    background-color: #ccff33;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 65.2%;
+    font-family: 'Nova Square', cursive;
+}
+h1{
+    color: #004b23;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+.container{
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 2rem;
+    max-width: 80rem;
+}
+.pop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:linear-gradient(to right bottom,#007200d8, #70e000c5) ;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 1000;
+}
+.icon-user{
+    font-size: 2.6rem;
+    align-self: center;
+    margin-left: 1rem;
+    color: #fff;
+}
+.mami{
+    border: none;
+    background-color: #70e000;
+    color: rgb(8, 87, 8) !important;
+}
+.hud{
+    position: relative;
+    display: flex;
+    text-align: center;
+    width: 50%;
+    padding: 2rem;
+    height: 40rem;
+    background-color: rgba(0, 0, 0, 0.377);
+
+}
+.icon-x{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 3.3rem;
+    color: #fff;
+    cursor: pointer;
+}
+.icon-click{
+    transform: rotate(360deg);
+    transition: .3s ease-in-out;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+.heading{
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    color: #fff;
+}
+#input{
+
+    width: 25rem;
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 2rem;
+    transition: .3s ease-in-out;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#input::placeholder{
+    font-size: 1.5rem;
+    color: gray;
+}
+#input:focus{
+    outline: none;
+}
+#input:hover{
+    width: 28rem;
+    cursor: pointer;
+}
+.btn{
+    width: 17rem;
+    padding: 1.1rem;
+    margin-top: 2rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #9ef01a 0%, #38b000 100%);
+}
+.btn:hover{
+    color: #fff;
+    transform: scale(1.03);
+    transition: transform 250ms;
+    cursor: pointer;
+    box-shadow: 0 .4rem 1.4rem 0 rgba(255, 255, 0, 0.637);
+}
+
+.invisible{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.username{
+    color: #9ffa0e;
+    text-shadow: 0px .8px .8px rgba(0, 0, 0, 0.74);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content{
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.list{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 2.5rem;
+    
+}
+.how{
+    height:50px;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: #fca311;
+    margin-bottom: .3rem;
+}
+.list input{
+    height: 25%;
+    width: 100%;
+    animation-name: prices;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    text-align: center;
+    font-size: 2rem;
+    color: #fca311;
+
+}
+.bottona{
+    border-radius: 5px;
+    border: none;
+    color: #004b23;
+    padding: 2rem;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2rem;
+    background: linear-gradient(90deg, #70e000, #38b000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prices, .profil, .new-money{
+    display: flex;
+    height:0px;
+    overflow: hidden;
+    width: 100%;
+    
+}
+.flash{
+    font-size: 3rem;
+    transform: rotate(-90deg);
+    margin-left: 1rem;
+    color: #fff;
+}
+#send{
+    padding: 1rem;
+    font-size: 2rem;
+    width: 100%;
+    color: #9ef01a;
+    background-color: green;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ib{
+    color: #004b23;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.prices-visible{
+    overflow: visible;
+    transition: all 1s;
+    height: 200px;
+}
+.money{
+    color: #fff;
+    text-shadow: 0 .3rem .2rem #000;
+    margin-top: .4rem;
+    margin-bottom: 2rem;
+    font-size: 2.6rem;
+}
+
+@keyframes prices {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.p{
+    color: blue;
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+    font-size: 3.4rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:400px) {
+    .hud{
+        width: 87%;
+        box-shadow: 0 .4rem 1.4rem rgba(0, 0, 0, 0.63);
+    }
+}

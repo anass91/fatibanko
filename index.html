@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankist</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1>CIHX BANK</h1>
+        <div class="pop flex-center">
+            <div class="hud flex-center flex-column">
+                <ion-icon class="icon-x" name="close-outline"></ion-icon>
+               <h3 class="heading">Enter Your Name</h3>
+               <input type="text" placeholder="your name" id="input" />
+                <button class="btn">Enter</button>
+            </div>
+        </div>
+        <div class="content flex-column flex-center">
+            <h2 class="username"></h2>
+            <div class="list flex-column flex-center">
+                <button class="bottona" onclick="obj.menuProfill()">Your Profil <ion-icon class="icon-user" name="person-outline"></ion-icon></button>
+                 <div class="profil flex-column flex-center" >
+                     <p class="p"><span class="ib">BANK :</span><span id="bank"></span></p>
+                     <p class="p"><span class="ib">NAME :</span><span id="name"></span></p>
+                     <P class="p"><span class="ib">RIB :</span><span id="rib"></span></P>
+                     <p class="p"><span class="ib">SOLDE :</span><span id="sold"></span></p>
+                 </div>
+            </div>
+        </div>
+        <div class="content flex-column flex-center">
+            
+            <div class="list flex-column flex-center">
+                <button  class="bottona" onclick="menuHeight()">Take Money
+                    <ion-icon class="icon-user" name="cash-outline"></ion-icon>
+
+                </button>
+                 <div class="prices flex-column flex-center" id="prices">
+                    <input type="submit" value="100 MAD" id="take100" />
+                    <input type="submit" value="200 MAD" onclick="obj.takMoney2()"/>
+                    <input type="submit" value="500 MAD" onclick="obj.takMoney3()"/>
+                    <input type="submit" id="outherPrices" value="Outher prices"/>
+                 </div>
+            </div>
+        </div>
+        <div class="content flex-column flex-center">
+            <div class="list flex-column flex-center">
+                <button class="bottona" onclick="howMoney()">Take Money
+                    <ion-icon class="icon-user" name="card-outline"></ion-icon>
+                </button>
+                 <div class="new-money flex-column flex-center" id="prices">
+                    <h2 class="money">Enter Your New Money</h2>
+                    <input class="how" id="how" type="text" placeholder="How Mush"/>
+                    <button id="send" class="send">Send <ion-icon class="flash" name="chevron-forward-outline"></ion-icon></button>
+                    
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/code.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
